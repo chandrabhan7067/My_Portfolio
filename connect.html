@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        body{
+            background-color: #41061b;
+            font-size: 16px;
+            color: #fff;
+        }
+      
+        .navbar{
+          background-color: yellow;
+        }
+      
+
+        .nav-link{
+            font-size: 18px;
+            font-weight: bold;
+      
+          }
+
+        .about {
+            margin-top: 40px;
+        }
+
+        .connection {
+            margin-top: 30px;
+            margin-left: 25px;
+        }
+
+        .mar {
+            margin-top: 20px;
+        }
+
+        .img2{
+            height: 40px;
+            width: 43px;
+            border-radius: 30px;
+          }
+
+          #phoneBox {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #4d0a0a;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 24px;
+            height: 200px;
+            width: 200px;
+          }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img class="img2" src="developer1.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="skill.html">Skill <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="myprojects.html">MyProjects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="connect.html">Connect <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <li class="nav-link">
+
+                <a id="callButton" onclick="displayPhoneNumber()" class="text-decoration-none" href="#" > Contact me</a>
+        
+                <div id="phoneBox" style="display: none;"></div> 
+        
+              </li>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>You can connect with me with this following application</h2>
+    </div>
+
+    <div class="connection">
+        <h5 class="mar">This is my linkedin profile</h5>
+        <a href="https://www.linkedin.com/in/chandrabhan-bahetwar-aa56b2234/" target="_blank"><button
+                class="btn btn-success btn-sm">Click here</button></a>
+
+        <h5 class="mar">This is my Instagram profile</h5>
+        <a href="https://www.instagram.com/chandrabhan_bahetwar/" target="_blank"><button
+                class="btn btn-success btn-sm">Click here</button></a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+        <script>
+       
+            function displayPhoneNumber() {
+              event.stopPropagation();
+              var phoneNumber = '7067803966';
+              var phoneBox = document.getElementById("phoneBox");
+        
+              // Set the phone number in the box
+              //phoneBox.innerText = "My number" + phoneNumber;
+      
+              phoneBox.innerHTML = "my number<br>" + phoneNumber;
+        
+              // Show the box
+              phoneBox.style.display = "block";
+      
+              document.addEventListener("click", function() {
+                phoneBox.style.display = "none";
+              });
+      
+            }
+      
+          </script>
+
+</body>
+
+</html>
