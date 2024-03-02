@@ -1,0 +1,756 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #1d455d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-link {
+  color: white;
+}
+
+.info {
+  background-color: #030001;
+  background-image: url("https://p0.pikist.com/photos/30/323/technology-keyboard-computing-peripheral-illuminated-mac-blur-typing-blog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  color: #fff;
+  height: 96vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.devinfo {
+  font-family: 'Source Code Pro', monospace;
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.hello {
+  font-size: 50px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 22px;
+}
+
+.running-words{
+  font-size: 22px;
+  height: 30px;
+  margin: 15px 0px;
+}
+
+.moreabout {
+  font-size: 20px;
+  font-family: 'Source Serif 4', sans-serif;
+  margin-top: 15px;
+}
+
+.button {
+  margin-top: 60px;
+}
+
+.btn1 {
+  padding: 5px 8px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid grey;
+  font-size: 18px;
+  background-color: #373b74;
+  color: white;
+  transition: 0.5s;
+}
+
+.btn1:hover {
+  color: #373b74;
+  background-color: white;
+}
+
+.img2 {
+  height: 40px;
+  width: 43px;
+  border-radius: 30px;
+}
+
+.Callbutton {
+  color: white;
+}
+
+#phoneBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #ff7575;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  height: 100px;
+  width: 430px;
+}
+
+/* Experience section  */
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.exp-para {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.intern {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.intern a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.Interndiv:nth-child(1){
+  font-size: 14px;
+}
+
+.exp {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(23deg, red, blue, green, transparent);
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  transition: 0.8s;
+}
+
+.exp:hover {
+  transform: scale(1.1);
+}
+.dateDiv{
+  font-family: cursive;
+  font-size: 11px;
+}
+
+/* ----------------------------------------------------- */
+
+/* about section  */
+
+.aboutMe {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 0 20px;
+  font-family: math;
+}
+
+.About_container {
+  margin-top: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(31deg, #7f0f0f, #121234, #274327, transparent);
+}
+
+.About_container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------- */
+
+
+
+/* Skills section  */
+
+.Skillscontainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 82px;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.technology {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  animation: Resize 1.5s ease infinite;
+
+}
+
+.technology img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.technology p {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@keyframes Resize {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* --------------------------------------------------- */
+
+.foot {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #323232;
+  color: white;
+}
+
+
+
+/* Coding profile section  */
+
+.profileContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.profile {
+  margin: 20px;
+}
+
+.profile img {
+  width: 230px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 150px;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+
+}
+
+.profile1,
+.profile2,
+.profile3 {
+  opacity: 0;
+  /* Hide profiles initially */
+}
+
+.animate-left {
+  animation: slideLeft 1s forwards;
+}
+
+.animate-right {
+  animation: slideRight 1s forwards;
+}
+
+.animate-bottom {
+  animation: slideBottom 1s forwards;
+}
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Social media profiles ------------------------------------------- */
+
+.connection {
+  height: 40px;
+
+}
+
+.social-media {
+  margin-top: 10%;
+  gap: 13px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-media a img {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-media a img:hover{
+  opacity: 0.7;
+}
+
+/* Up arrow ----------------------------------------- */
+
+.arrow {
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+}
+
+.arrow img {
+  width: 45px;
+  height: 45px;
+}
+
+/* --------------------------------------------------- */
+
+
+@media screen and (max-width: 1180px) {
+  .img1 {
+    width: 300px;
+    height: 350px;
+  }
+
+  .devinfo {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .img1 {
+    width: 200px;
+    height: 250px;
+  }
+
+  .devinfo {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .name {
+    text-align: center;
+  }
+}
+
+/* project gallery  */
+.box {
+  margin-left: 36px;
+  text-align: justify;
+}
+
+.para {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.gallery_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  width: 900px;
+
+}
+
+.gallery ::-webkit-scrollbar {
+  display: none;
+}
+
+.imgs {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.imgs img {
+  width: 440px;
+  height: 285px;
+  margin-right: 10px;
+  /* object-fit: cover; */
+  filter: grayscale(100%);
+  transition: transform 0.5s ease;
+
+}
+
+.imgs img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.nav-btn{
+  height: 50px;
+  width: 50px;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1180px) {
+  .img1 {
+    width: 300px;
+    height: 350px;
+  }
+
+  .devinfo {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .img1 {
+    width: 200px;
+    height: 250px;
+  }
+
+  .devinfo {
+    width: 500px;
+  }
+
+  .gallery {
+    width: 700px;
+  }
+
+  .imgs img {
+    width: 340px;
+  }
+
+  /* .nav-btn {
+    width: 50px;
+    height: 50px;
+  } */
+
+  .Skillscontainer {
+    width: 80%;
+    gap: 57px;
+  }
+
+}
+
+@media screen and (max-width: 830px) {
+  .gallery {
+    width: 500px;
+  }
+
+  .imgs img {
+    width: 240px;
+    height: 230px;
+  }
+
+}
+
+@media screen and (max-width: 745px) {
+  .img1 {
+    display: none;
+  }
+
+  .info {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .devinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .about,.running-words {
+    text-align: center;
+  }
+
+  .technology {
+    width: 55px;
+    height: 55px;
+  }
+
+  .technology img {
+    width: 20px;
+    margin-top: 5px;
+  }
+
+  .technology p {
+    font-size: 7px;
+  }
+
+  .Skillscontainer {
+    gap: 60px;
+    width: 90%;
+  }
+
+  .exp-para {
+    font-size: 35px;
+  }
+
+  .para{
+    font-size: 13px;
+  }
+
+  .box{
+    font-size: 11px;
+  }
+
+  .intern{
+    font-size: 13px;
+  }
+
+  .intern a{
+    font-size: 8px;
+  }
+
+  .Interndiv{
+    margin: auto;
+  }
+
+  .Interndiv:nth-child(1){
+    font-size: 11px;
+  }
+
+  .dateDiv {
+    display: none;
+  }
+
+  .arrow a img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .info {
+    height: 620px;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  .gallery {
+    width: 300px;
+  }
+
+  .imgs img {
+    width: 292px;
+    height: 200px;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .About_container {
+    width: 93%;
+  }
+
+  .aboutMe {
+    font-size: 14px;
+    padding: 0px;
+  }
+
+  .Skillscontainer {
+    width: 90%;
+    gap: 50px;
+  }
+
+  .profile img {
+    width: 160px;
+    height: 100px;
+  }
+
+  .social-media a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .gallery {
+    width: 200px;
+  }
+
+  .imgs img {
+    width: 192px;
+    height: 160px;
+  }
+
+  .nav-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .Skillscontainer {
+    gap: 35px;
+  }
+
+  .technology {
+    width: 35px;
+    height: 35px;
+  }
+
+  .technology p {
+    font-size: 5px;
+  }
+
+  .technology img {
+    width: 11px;
+    margin-top: 8px;
+
+  }
+
+  .exp-para {
+    font-size: 25px;
+  } 
+
+  .info {
+    height: 550px;
+  }
+
+  .hello {
+    font-size: 42px;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .about,.running-words{
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 340px) {
+  .gallery {
+    width: 150px;
+  }
+
+  .imgs img {
+    width: 142px;
+    height: 120px;
+  }
+
+  .nav-btn {
+    width: 25px;
+    height: 25px;
+  }
+
+  .info {
+    height: 450px;
+  }
+
+  .hello {
+    font-size: 38px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .about,.running-words{
+    font-size: 15px;
+  }
+
+  .btn1{
+    font-size: 10px;
+    margin: 0px;
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+}
