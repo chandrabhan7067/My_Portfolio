@@ -55,7 +55,7 @@ window.addEventListener("scroll", checkScrollProfile)
 const sentences = [
     "Software Engineer",
     "Frontend Developer",
-    "Data Scientist"
+    "Data Science"
   ];
   
   const aboutDiv = document.querySelector('.running-words');
